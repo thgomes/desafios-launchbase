@@ -1,0 +1,26 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+<div class="about-container">
+  <img 
+    src="https://avatars0.githubusercontent.com/u/28929274?s=200&v=4" 
+    alt="rocketseat"
+  >
+  <h1>{{about.name}}</h1>
+  <p>{{about.description}}</p>
+  <ul>
+    {% for framework in about.stack %}
+      <li>
+        <p>{{framework}}</p>
+      </li>
+    {% endfor %}
+  </ul>
+  <div>
+    {% for media in about.medias %}
+      <a href="{{media.url}}" target="_blank">{{media.name}}</a>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock %}

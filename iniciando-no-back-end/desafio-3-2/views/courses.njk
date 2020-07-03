@@ -1,0 +1,18 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+
+<div class="courses-container">
+  {% for course in courses %}
+    <a href="https://rocketseat.com.br/{{course.id}}" target="_blank">
+      <div id="{{course.id}}" class="course-card">
+        <img src="{{course.image_url}}" alt="{{course.id}}">
+        <p>{{course.modules}}</p>
+        <p>{{course.price}}</p>
+      </div>
+    </a>
+  {% endfor %}
+</div>
+
+{% endblock %}

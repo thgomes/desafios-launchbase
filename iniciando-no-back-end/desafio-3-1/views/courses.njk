@@ -1,0 +1,33 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+
+<div class="courses-container">
+  <div id="starter" class="course-card">
+    <img src="https://skylab.rocketseat.com.br/static/64c237ccff807c054339a62d53b4b402.svg" alt="Starter">
+    <p>08 módulos</p>
+    <p>FREE</p>
+  </div>
+  <div id="launchbase" class="course-card">
+    <img src="https://skylab.rocketseat.com.br/static/0828532024cb46921a6b5e941f8d788d.svg" alt="launchBase">
+    <p>09 módulos</p>
+    <p>PAY</p>
+  </div>
+  <div id="gostack" class="course-card">
+    <img src="https://skylab.rocketseat.com.br/static/83a178a0653dab1d55e2ed7946465975.svg" alt="GoStack">
+    <p>10 módulos</p>
+    <p>PAY</p>
+  </div>
+</div>
+
+<div class="modal-overlay">
+  <div class="modal">
+    <i class="material-icons close-modal">close</i>
+    <iframe src="" frameborder="0"></iframe>
+  </div>
+</div>
+
+<script src="scripts.js"></script>
+
+{% endblock %}
