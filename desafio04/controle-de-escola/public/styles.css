@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #457b9d;
+  color: #333;
+}
+
+header {
+  background-color: #f1faee;
+  padding: 18px;
+  text-align: center;
+}
+
+.links a{
+  color: #457b9d;
+  color: #1d3557;
+  text-decoration: none;
+  font-size: 24px;
+  position: relative;
+}
+
+.links a + a {
+  margin-left: 24px;
+}
+
+.links a:hover {
+  color: #457b9d;
+  transition: 0.2s;
+}
+
+.links a.active {
+  font-weight: bold;
+}
+
+.links a::after {
+  content: "";
+  width: 0;
+  height: 2.6px;
+  background-color: #457b9d;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+}
+
+.links a:hover::after {
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+
+/* CARD */
+.card {
+  background-color: #f1faee;
+  max-width: 800px;
+  min-height: 400px;
+  margin: 48px auto;
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.4);
+  animation: right-to-left 0.3s ease-out;
+  position: relative;
+}
+
+@keyframes right-to-left {
+  from {
+    opacity: 0;
+    transform: translate(15px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.card .avatar {
+  border-radius: 8px 0 0 8px;
+}
+
+/* DETAILS */
+.details {
+  padding: 32px;
+}
+
+.details h3 {
+  color: #1d3557;
+  font-size: 24px;
+}
+
+.details .item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 16px 0;
+}
+
+.details .item:last-child {
+  border: none;
+}
+
+.details .item div:nth-child(1) {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+  color: #457b9d;
+  font-weight: bold;
+}
+
+.details .item div:nth-child(2) {
+  font-size: 18px;
+}
+
+.details .item span {
+  background-color: #1d3557;
+  display: inline-block;
+  color: #f1faee;
+  padding: 4px 8px;
+  border-radius: 8px;
+  margin: 4px 4px 0 0;
+}
+
+/* FORM */
+input {
+  width: 100%;
+  outline: none;
+}
+
+input[type="radio"] {
+  width: initial;
+  margin-right: 4px;
+}
+
+input::placeholder {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+button[type="submit"], a.button {
+  padding: 8px 64px;
+  background-color: #1d3557;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #f1faee;
+  margin-top: 32px;
+  float: right;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover, a.button:hover {
+  background-color: #457b9d;
+  transition: 0.3s;
+}
+
+.form-delete button {
+  background-color: #808080;
+  float: left;
+}
+
+.form-delete button:hover {
+  background-color: #ff4040;
+  transition: 0.3s;
+}
+
+.create-button-container {
+  padding: 32px 0;
+}
+
+.create-button-container a {
+  margin-top: 0;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
+
+/* LISTA DE PROFESSORES */
+.table-container {
+  display: block;
+  padding: 40px;
+}
+
+.table-container table tr {
+  display: grid;
+  grid-template-columns: 8fr 8fr 1fr;
+}
+
+#students-table-container table tr{
+  grid-template-columns: 5fr 5fr 5fr 1fr;
+}
+
+.table-container table tr th {
+  text-align: left;
+  color: #1d3557;
+  letter-spacing: 0.8px;
+  margin-bottom: 8px;
+}
+
+.table-container table tr td {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.table-container table span {
+  display: inline-block;
+  background-color: #fff;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+  box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.table-container table tr td:last-child {
+  display: flex;
+  justify-content: center;
+}
+
+.table-container table tr th:last-child {
+  text-align: center;
+}
+
+.table-container table tr td a{
+  text-decoration: none;
+  color: #457b9d;
+  font-weight: bold;
+}

@@ -1,0 +1,95 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "name": "Juliana Silva",
+      "avatar_url": "https://lh3.googleusercontent.com/proxy/IdK_1ng-_ATIjv2KGDTHDUvaEMlrzejL3-m4d-tD_XdVeRyBlpJaNDo67PvtsiDfEHHuqtWLyukHDtCMml08BML1o6kHqbDj6L9Tf3wqMXZjN_BhdEtuiQ8OosikFTZb9t-OkP_D1buu",
+      "educational_level": "mestrado",
+      "birth": 825984000000,
+      "type": "inperson",
+      "subjects": "física, matemática",
+      "created_at": 1595877601330
+    },
+    {
+      "id": 2,
+      "name": "Pedro Silva",
+      "avatar_url": "https://www.earnmydegree.com/sites/all/files/public/images/become-college-professor.jpg",
+      "educational_level": "doutorado",
+      "birth": -154915200000,
+      "type": "inperson",
+      "subjects": "física",
+      "created_at": 1595878001703
+    },
+    {
+      "id": 3,
+      "name": "Paulo dos Santos",
+      "avatar_url": "https://ced.ncsu.edu/wp-content/uploads/2018/08/Teacher-working-with-students-1500x1000.jpg",
+      "educational_level": "doutorado",
+      "birth": 5184000000,
+      "subjects": "português, literatura, redação",
+      "created_at": 1595878150574
+    },
+    {
+      "id": 4,
+      "name": "Paulo Roberto",
+      "avatar_url": "https://www.regent.edu/app/uploads/sites/9/2018/08/eds-education-leadership-mathematics-regent-university.jpg",
+      "educational_level": "superior",
+      "birth": 575164800000,
+      "type": "online",
+      "subjects": "química, biologia, física",
+      "created_at": 1595878501768
+    },
+    {
+      "id": 7,
+      "name": "Juliana Mendes",
+      "avatar_url": "https://content.thriveglobal.com/wp-content/uploads/2019/10/7-Reasons-To-Become-A-Teacher-.jpg?w=1550",
+      "educational_level": "doutorado",
+      "birth": "1991-02-02",
+      "type": "inperson",
+      "subjects": "matemática",
+      "created_at": 1595878651751
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "name": "João Vitor",
+      "avatar_url": "https://s3-ap-southeast-2.amazonaws.com/vsurewpupload/wp-content/uploads/2018/07/student-visa.jpg",
+      "birth": "2000-05-05",
+      "created_at": 1595879832753,
+      "email": "joaovitor12@gmail.com",
+      "grade": "3",
+      "time_load": "6"
+    },
+    {
+      "id": 2,
+      "name": "Isabela Almeida",
+      "avatar_url": "https://images.ctfassets.net/p0qf7j048i0q/2dAaiBRTHln483vL8oju2t/df0f3dad7b9e0c788acaf497ff187119/G482150091.jpg?w=1000&h=750&fit=fill&fm=webp",
+      "birth": "2007-02-03",
+      "created_at": 1595879924760,
+      "email": "isaalmeida@outlook.com",
+      "grade": "5",
+      "time_load": "4"
+    },
+    {
+      "id": 3,
+      "name": "Julia Ribeiro",
+      "email": "juliarib@gmail.com",
+      "grade": "2",
+      "time_load": "7",
+      "avatar_url": "https://www.costaatt.edu.tt/wp-content/uploads/2018/07/Current-Student-Image-1.jpg",
+      "birth": 981244800000,
+      "created_at": 1595892484929
+    },
+    {
+      "id": 4,
+      "name": "Pedro Rocha",
+      "email": "pedrorocha@gmail.com",
+      "grade": "1",
+      "time_load": "6",
+      "avatar_url": "https://www.aldineisd.org/wp-content/uploads/2020/07/black-student-in-front-of-laptop.jpg",
+      "birth": 1045699200000,
+      "created_at": 1595893342728
+    }
+  ]
+}
